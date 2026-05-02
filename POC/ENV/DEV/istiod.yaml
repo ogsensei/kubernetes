@@ -1,5 +1,8 @@
   image: pilot
 
+  cni:
+    enabled: true
+
   # Resources for a small pilot install
   resources:
     requests:

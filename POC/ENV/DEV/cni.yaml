@@ -1,2 +1,12 @@
   image: install-cni
+
+  resources:
+    requests:
+      cpu: 100m
+      memory: 100Mi
+
+  updateStrategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
   
