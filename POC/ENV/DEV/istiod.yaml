@@ -1,0 +1,18 @@
+  image: pilot
+
+  # Resources for a small pilot install
+  resources:
+    requests:
+      cpu: 500m
+      memory: 2048Mi
+
+    proxy:
+      image: proxyv2
+            # Resources for the sidecar.
+      resources:
+        requests:
+          cpu: 100m
+          memory: 128Mi
+        limits:
+          cpu: 2000m
+          memory: 1024Mi
