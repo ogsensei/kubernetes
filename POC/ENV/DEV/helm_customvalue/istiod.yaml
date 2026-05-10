@@ -1,4 +1,7 @@
-  image: pilot
+  image: xyza .azurecr.io/pilot:1.29.2
+
+  cni:
+    enabled: true
 
   # Resources for a small pilot install
   resources:
@@ -7,7 +10,7 @@
       memory: 2048Mi
 
     proxy:
-      image: proxyv2
+      image: xyza.azurecr.io/proxyv2:1.29.2
             # Resources for the sidecar.
       resources:
         requests:
