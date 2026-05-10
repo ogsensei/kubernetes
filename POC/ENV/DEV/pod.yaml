@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: example-pod
+  namespace: testns
+spec:
+  containers:
+  - name: hw
+    image: xyza.azurecr.io/hw:3
+    ports:
+    - containerPort: 8081

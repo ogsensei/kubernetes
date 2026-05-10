@@ -1,0 +1,44 @@
+global:
+  image:
+    repository: xyza.azurecr.io/argocd
+    tag: 3.4.1
+
+configs:
+  cm:
+    admin.enabled: true
+
+controller:
+  replicas: 1
+
+  image:
+    repository: xyza.azurecr.io/argocd
+    tag: 3.4.1
+
+repoServer:
+  image:
+    repository: xyza.azurecr.io/argocd
+    tag: 3.4.1
+
+server:
+  image:
+    repository: xyza.azurecr.io/argocd
+    tag: 3.4.1
+
+  service:
+    type: LoadBalancer
+
+dex:
+  enabled: false
+
+redis:
+  enabled: true
+
+  image:
+    repository: xyza.azurecr.io/redis
+    tag: 8.2.6
+
+applicationSet:
+  enabled: false
+
+notifications:
+  enabled: false

@@ -1,4 +1,4 @@
-  image: install-cni
+  image: xyza.azurecr.io/cni:1.29.2
 
   resources:
     requests:
